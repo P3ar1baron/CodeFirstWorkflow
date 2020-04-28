@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace CodeFirst
 {
@@ -49,6 +46,13 @@ namespace CodeFirst
         Advanced = 3
     }
 
+    public class PlutoDbContext : DbContext
+    {
+        public DbSet<Course> Courses { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Course> Tags { get; set; }
+
+    }
     class Program
     {
         static void Main(string[] args)
