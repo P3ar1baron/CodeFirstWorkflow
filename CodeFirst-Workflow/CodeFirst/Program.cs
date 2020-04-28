@@ -35,12 +35,18 @@ namespace CodeFirst
 
     public class Tag
     {
-        public int MyProperty { get; set; }
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public IList<Course> Courses { get; set; }
     }
 
     public enum CourseLevel
     {
-
+        Beginner = 1,
+        Intermediate = 2,
+        Advanced = 3
     }
 
     class Program
