@@ -52,6 +52,11 @@ namespace CodeFirst
         public DbSet<Author> Authors { get; set; }
         public DbSet<Course> Tags { get; set; }
 
+        public PlutoDbContext()
+            :base("name=DefaultConnection")
+        {
+
+        }
     }
     class Program
     {
