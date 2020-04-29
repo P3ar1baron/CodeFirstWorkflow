@@ -53,7 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Author.cs" />
-    <Compile Include="Category.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="Migrations\202004281827588_InitialModel.cs" />
     <Compile Include="Migrations\202004281827588_InitialModel.Designer.cs">
@@ -78,6 +77,14 @@
     <Compile Include="Migrations\202004282113122_DeletePublishedColumnFromCoursesTable.cs" />
     <Compile Include="Migrations\202004282113122_DeletePublishedColumnFromCoursesTable.Designer.cs">
       <DependentUpon>202004282113122_DeletePublishedColumnFromCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004291829526_DeleteCategoryColumnFromCoursesTable.cs" />
+    <Compile Include="Migrations\202004291829526_DeleteCategoryColumnFromCoursesTable.Designer.cs">
+      <DependentUpon>202004291829526_DeleteCategoryColumnFromCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202004291945408_RemoveCategoriesTable.cs" />
+    <Compile Include="Migrations\202004291945408_RemoveCategoriesTable.Designer.cs">
+      <DependentUpon>202004291945408_RemoveCategoriesTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PlutoContext.cs" />
@@ -107,6 +114,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202004282113122_DeletePublishedColumnFromCoursesTable.resx">
       <DependentUpon>202004282113122_DeletePublishedColumnFromCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004291829526_DeleteCategoryColumnFromCoursesTable.resx">
+      <DependentUpon>202004291829526_DeleteCategoryColumnFromCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202004291945408_RemoveCategoriesTable.resx">
+      <DependentUpon>202004291945408_RemoveCategoriesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

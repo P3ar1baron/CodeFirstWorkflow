@@ -1,4 +1,4 @@
-namespace CodeFirstWithExistingDatabase
+﻿namespace CodeFirstWithExistingDatabase
 {
     using System;
     using System.Collections.Generic;
@@ -20,8 +20,6 @@ namespace CodeFirstWithExistingDatabase
         public string Name { get; set; }
 
         public string Description { get; set; }
-
-        public Category Category { get; set; }
 
         public int Level { get; set; }
 
